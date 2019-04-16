@@ -4,7 +4,11 @@
     "description": "Language support for Zimpl modeling language",
     "version": "0.0.1",
     "license": "MIT",
-    "publisher": "eifler",
+    "publisher": "Leon Eifler",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leoneifler/VSZimpl"
+    },
     "author": {
 		"name": "Leon Eifler",
 		"email": "leoneifler@gmail.com",
@@ -17,7 +21,7 @@
         "Programming Languages"
     ],
     "keywords": ["zimpl", "linear programming", "modeling"],
-    "icon" : "newscippy.png",
+    "icon" : "https://scip.zib.de/images/newscippy.png",
     "contributes": {
         "languages": [{
             "id": "zimpl",
