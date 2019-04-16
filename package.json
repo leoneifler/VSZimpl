@@ -1,0 +1,34 @@
+{
+    "name": "vszimpl",
+    "displayName": "VSZimpl",
+    "description": "Language support for Zimpl modeling language",
+    "version": "0.0.1",
+    "license": "MIT",
+    "publisher": "eifler",
+    "author": {
+		"name": "Leon Eifler",
+		"email": "leoneifler@gmail.com",
+		"url": "http://www.zib.de/members/eifler"
+	},
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": ["zimpl", "linear programming", "modeling"],
+    "icon" : "newscippy.png",
+    "contributes": {
+        "languages": [{
+            "id": "zimpl",
+            "aliases": ["Zimpl", "zimpl"],
+            "extensions": [".zpl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "zimpl",
+            "scopeName": "source.zpl",
+            "path": "./syntaxes/zimpl.tmLanguage.json"
+        }]
+    }
+}

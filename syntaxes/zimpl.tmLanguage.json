@@ -1,0 +1,91 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Zimpl",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#cons"
+		},
+		{
+			"include": "#defs"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include" : "#setops"
+		},
+		{
+			"include" : "#setgens"
+		},
+		{
+			"include" : "#function-def"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.zimpl",
+				"match": "\\b(forall|with|in|do|if|then|else|end|and|or|as|print)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.zimpl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.zimpl",
+					"match": "\\\\."
+				}
+			]
+		},
+		"cons": {
+			"patterns": [{
+			"name" : "keyword.other.zimpl",
+			"match": "\\b(subto|maximize cost|minimize cost|vif)\\b"
+			}]
+		},
+		"defs" : {
+			"patterns": [{
+				"name" : "variable.zimpl",
+				"match": "\\b(var|set|param|defnumb|defstrg|defbool|defset)\\b"
+				}]
+		},
+		"setops" : {
+			"patterns": [{
+				"name" : "support.function.zimpl",
+				"match": "\\b(union|cross|inter|without|symdiff|proj|argmin|argmax|card|mod|abs|sng|floor|ceil|round|min|max|sum|prod|random|ord|length|sqrt|log|ln|exp)\\b"
+				}]
+		},
+		"setgens" : {
+			"patterns": [{
+				"name" : "support.function.zimpl",
+				"match": "\\b(powerset|subsets|indexset|read)\\b"
+				}]
+		},
+		"cons-attrib" : {
+			"patterns": [{
+				"name" : "entity.other.attribute-name.zimpl",
+				"match": "\\b(scale|separate|checkonly|indicator)\\b"
+				}]
+		},
+		"comments" : {
+			"name" : "comment.zimpl",
+			"begin": "#",
+			"end" : "\n",
+			"patterns": [
+				{
+					"name": "constant.character.escape.zimpl",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.zpl"
+}
