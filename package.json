@@ -1,38 +1,56 @@
 {
-    "name": "vszimpl",
-    "displayName": "VSZimpl",
-    "description": "Language support for Zimpl modeling language",
-    "version": "0.0.1",
-    "license": "MIT",
-        "publisher": "leoneifler",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/leoneifler/VSZimpl"
-    },
-    "author": {
+	"name": "vszimpl",
+	"displayName": "VSZimpl",
+	"description": "Language support for Zimpl modeling language",
+	"version": "0.0.1",
+	"license": "MIT",
+	"publisher": "leoneifler",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leoneifler/VSZimpl"
+	},
+	"author": {
 		"name": "Leon Eifler",
 		"email": "leoneifler@gmail.com",
 		"url": "http://www.zib.de/members/eifler"
 	},
-    "engines": {
-        "vscode": "^1.33.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "keywords": ["zimpl", "linear programming", "modeling"],
-    "icon" : "https://scip.zib.de/images/newscippy.png",
-    "contributes": {
-        "languages": [{
-            "id": "zimpl",
-            "aliases": ["Zimpl", "zimpl"],
-            "extensions": [".zpl"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "zimpl",
-            "scopeName": "source.zpl",
-            "path": "./syntaxes/zimpl.tmLanguage.json"
-        }]
-    }
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"zimpl",
+		"linear programming",
+		"modeling"
+	],
+	"icon": "newscippy-bg.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "zimpl",
+				"aliases": [
+					"Zimpl",
+					"zimpl"
+				],
+				"extensions": [
+					".zpl"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "zimpl",
+				"scopeName": "source.zpl",
+				"path": "./syntaxes/zimpl.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "34ef8cbd-e21d-4f47-95f5-ddf5582ade8e",
+		"publisherDisplayName": "Leon Eifler",
+		"publisherId": "854d281c-1c40-48b4-b240-6a8dd2c1bd56"
+	}
 }
