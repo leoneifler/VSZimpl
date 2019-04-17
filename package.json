@@ -4,7 +4,7 @@
     "description": "Language support for Zimpl modeling language",
     "version": "0.0.1",
     "license": "MIT",
-    "publisher": "Leon Eifler",
+        "publisher": "leoneifler",
     "repository": {
         "type": "git",
         "url": "https://github.com/leoneifler/VSZimpl"
